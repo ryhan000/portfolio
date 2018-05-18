@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title layout:title-pattern="$CONTENT_TITLE  $DECORATOR_TITLE">-Ryhan ahmed </title>
+
+<!--  Compiled and minified CSS from WebJar-->
+<link rel="stylesheet"
+	href="webjars/bootstrap/3.3.1/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" />
+
+<!-- Make sure to close the angle bracket  -->
+
+</head>
+
+<body>
+	<div class="navbar-wrapper">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse" data-target="#navbar"
+							aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/" th:href="@{/}">Portfolio</a>
+					</div>
+					
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#about">About</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+	<div layout:fragment="content">
+		<!--Page content goes here-->
+	
+	
+	</div>
+
+	<script src="webjars/jquery/1.11.1/jquery.min.js"
+		th:src="@{webjars/jquery/1.11.1/jquery.min.js}"></script>
+	<script src="webjars/bootstrap/3.3.1/js/bootstrap.min.js"
+		th:src="@{webjars/bootstrap/3.3.1/js/bootstrap.min.js}"></script>
+
+	<div layout:fragment="custom-scripts">
+		<!--Custom page specific scripts goes here-->
+
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="container">
+	<hr/>
+	
+	<aside class="banner">
+
+      <div class="container">
+
+        <div class="row" th:style="@{padding-left: 26px; background-image:@{api/image/carousel?background=green};}">
+          <div class="col-lg-6 my-auto">
+            <h2>Find me on: </h2>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <i class="material-icons">&#xe158;</i>
+                  <span class="network-name">Gmail</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </aside>
+	
+	<hr />
+	
+      <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#services">Projects</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <p class="copyright text-muted small">Copyright &copy; Ryhan ahamed. All Rights Reserved</p>
+      </div>
+      
+	</footer>
+</body>
+
+
+</html>
